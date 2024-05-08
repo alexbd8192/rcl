@@ -1,32 +1,57 @@
-***SVP Laisser vos demandes de modifications dans les commentaires en bas.***
+<h2 id="bkmrk-generateur-de-code-c" class="align-left"></h2>
+<p id="bkmrk-svp-laisser-vos-dema" class="align-center"><em><strong>SVP Laisser vos demandes de modifications dans les commentaires en bas.</strong></em></p>
+<p id="bkmrk-entrez-le-num%C3%A9ro-de-" class="align-left"><em><strong><label for="bkmrk-seed">Entrez le num&eacute;ro de client (max 5 chiffres):</label></strong></em> <input id="bkmrk-seed" maxlength="5" type="number"></p>
+<h4 id="bkmrk-%C2%A0g%C3%A9n%C3%A9rer-les-codes" class="align-left"><strong>&nbsp;<button style="	box-shadow:inset 0px 1px 0px 0px #cf866c;
+	background:linear-gradient(to bottom, #d0451b 5%, #bc3315 100%);
+	background-color:#d0451b;
+	border-radius:3px;
+	border:1px solid #942911;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:13px;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #854629;" id="bkmrk-button">G&eacute;n&eacute;rer les codes</button></strong></h4>
+<p id="bkmrk-%C2%A0" class="align-left"></p>
 
-***<label for="bkmrk-seed">Entrez le numéro de client (max 5 chiffres):</label>***
+<div id="bkmrk-output" class="align-left"></div>
 
-####  **<button style="border: 2px solid #ff0000;background-color: #666666;" id="bkmrk-button">Générer les codes</button>**
-
-<div class="align-left" id="bkmrk-output"></div>
 <table border="1" class="align-left" id="bkmrk-description-code-sys" style="border-collapse: collapse; width: 100%; border-width: 1px; border-style: inset; height: 152.375px;">
   <tbody>
     <tr style="height: 40px;">
       <th style="border-width: 1px; padding: 10px; width: 20%; height: 40px;">**Type**</th>
       <th style="border-width: 1px; padding: 10px; width: 45%; height: 40px;">**Code**</th>
       <th style="border-width: 1px; padding: 10px; width: 35%; height: 40px;">**Systèmes suggérés**</th>
-    </tr><tr style="height: 37.4583px;">
+    </tr>
+    
+    <tr style="height: 37.4583px;">
       <td style="border-width: 1px; padding: 10px; height: 37.4583px;">4 Chiffres</td>
       <td id="bkmrk-string1" style="border-width: 1px; padding: 10px; height: 37.4583px;"></td>
       <td style="border-width: 1px; padding: 10px; height: 37.4583px;">Code install; dsc, paradox, etc...</td>
-    </tr><tr style="height: 37.4583px;"><td style="border-width: 1px; padding: 10px; height: 37.4583px;">8 Chiffres</td>
-    </tr><tr style="height: 37.4583px;">
+    </tr>
+
+    <tr style="height: 37.4583px;">
       <td style="border-width: 1px; padding: 10px; height: 37.4583px;">6 Chiffres</td>
+      <td id="bkmrk-string5" style="border-width: 1px; padding: 10px; height: 37.4583px;"></td>
+      <td style="border-width: 1px; padding: 10px; height: 37.4583px;">Code install; dsc, paradox, etc...</td>
+    </tr>
+    
+    <tr style="height: 37.4583px;">
+      <td style="border-width: 1px; padding: 10px; height: 37.4583px;">8 Chiffres</td>
       <td id="bkmrk-string4" style="border-width: 1px; padding: 10px; height: 37.4583px;"></td>
       <td style="border-width: 1px; padding: 10px; height: 37.4583px;">Code install; dsc, paradox, etc...</td>
-    </tr><tr style="height: 37.4583px;"><td style="border-width: 1px; padding: 10px; height: 37.4583px;">8 Chiffres</td>
-      <td id="bkmrk-string4" style="border-width: 1px; padding: 10px; height: 37.4583px;"></td>
-      <td style="border-width: 1px; padding: 10px; height: 37.4583px;">Code install; dsc, paradox, etc...</td>
-    </tr><tr style="height: 37.4583px;"><td style="border-width: 1px; padding: 10px; height: 37.4583px;">8 Maj + min</td>
+    </tr>
+    
+    <tr style="height: 37.4583px;">
+      <td style="border-width: 1px; padding: 10px; height: 37.4583px;">8 Maj + min</td>
       <td id="bkmrk-string2" style="border-width: 1px; padding: 10px; height: 37.4583px;"></td>
       <td style="border-width: 1px; padding: 10px; height: 37.4583px;">Enregistreur, divers...</td>
-    </tr><tr style="height: 37.4583px;"><td style="border-width: 1px; padding: 10px; height: 37.4583px;">16 Mix</td>
+    </tr>
+    
+    <tr style="height: 37.4583px;">
+      <td style="border-width: 1px; padding: 10px; height: 37.4583px;">16 Mix</td>
       <td id="bkmrk-string3" style="border-width: 1px; padding: 10px; height: 37.4583px;"></td>
       <td style="border-width: 1px; padding: 10px; height: 37.4583px;">Service demandant un mdp assez fort...</td>
     </tr>
