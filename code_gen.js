@@ -1,3 +1,7 @@
+/*
+/var/www/bookstack/public/uploads  <-- dans bookstack, uploader ici
+*/
+
 function maxLengthCheck(input) {
     if (input.value.length > input.maxLength) {
         input.value = input.value.slice(0, input.maxLength);
@@ -21,7 +25,7 @@ function generateStrings() {
     var string2 = generateString(seed, 8);
     var string3 = generateMixedString(seed, 16);
     var string4 = generate8NumericString(seed, 8);
-    var string5 = generate8NumericString(seed, 6);
+    var string5 = generate6NumericString(seed, 6);
 
     // Affiche les différents codes
     document.getElementById('bkmrk-string1').innerText = string1;
@@ -38,7 +42,8 @@ function generate4NumericString(seed, length) {
 }
 
 function generate6NumericString(seed, length) {
-    seed = (seed * 31 + 17) % 9973;   // Algorithme pseudo-random
+    seed = (seed * 31 + 175975) / 20 ;   // Algorithme pseudo-random
+	seed = Math.round(seed);
     return Math.abs(seed).toString().padStart(length, '0').slice(0, length);
 }
 
@@ -58,17 +63,7 @@ function generateString(seed, length) {
     return result;
 }
 
-/*
-function generateMixedString(seed, length) {
-    var chars = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz!@#$%^&*()_+[]{}|;:,.<>?';
-    var result = '';
-    for (var i = 0; i < length; i++) {
-        result += chars.charAt(Math.floor(seed % chars.length));
-        seed = (seed * 17 + 5) % 9973; // Algorithme pseudo-random
-    }
-    return result;
-}
-*/
+
 
 function generateMixedString(seed, length) {
     var chars_small = 'abcdefghijklmnopqrstuvwxyz';
