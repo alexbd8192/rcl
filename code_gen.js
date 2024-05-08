@@ -18,13 +18,16 @@
 
             // Génèere les différent codes
             var string1 = generateNumericString(seed, 4);
+            var string4 = generateMixedString(seed, 6);
             var string2 = generateMixedString(seed, 8);
             var string3 = generateMixedString(seed, 16);
 
             // Affiche les différents codes
             document.getElementById('string1').innerText = "1) " + string1;
-            document.getElementById('string2').innerText = "2) " + string2;
-            document.getElementById('string3').innerText = "3) " + string3;
+            document.getElementById('string4').innerText = "2) " + string4;
+            document.getElementById('string2').innerText = "3) " + string2;
+            document.getElementById('string3').innerText = "4) " + string3;
+            
         }
 
         function generateNumericString(seed, length) {
